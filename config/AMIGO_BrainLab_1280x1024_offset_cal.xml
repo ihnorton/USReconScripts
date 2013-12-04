@@ -1,0 +1,35 @@
+<PlusConfiguration version="2.1" PlusRevision="Plus-2.0.0.2866">
+  <DataCollection StartupDelaySec="1">
+    <DeviceSet Name="AMIGO BrainLab 1280x1024 Offset-calibration 20131204" Description=""/>
+  </DataCollection>
+  <CoordinateDefinitions>
+    <Transform From="Ultrasound" To="Image"
+      Matrix="
+        -9.5 0 0 666
+        0 0 9.5 123
+        0 -9.5 0 0
+        0 0 0 1"
+       Error="1.02107" Date="03122013"/>    
+    <Transform From="PointerTip" To="Pointer"
+      Matrix="
+        1	0	0	0
+        0	1	0	0
+        0	0	1	0
+        0	0	0	1"
+       Error="0.413715" Date="062113_141922"/>
+  </CoordinateDefinitions>
+
+  <VolumeReconstruction
+    OutputSpacing=".5 .5 .5"
+    ClipRectangleOrigin="313 52"
+    ClipRectangleSize="700 700"
+    FanOrigin="666 -118"
+    FanAngles="-30 30"
+    FanDepth="1000"
+    Calculation="WEIGHTED_AVERAGE"
+    Interpolation="LINEAR"
+    Optimization="FULL"
+    Compounding="On"
+    FillHoles="Off"/>
+
+</PlusConfiguration>

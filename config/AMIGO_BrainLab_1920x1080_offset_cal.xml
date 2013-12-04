@@ -1,0 +1,32 @@
+<PlusConfiguration version="2.1" PlusRevision="Plus-2.0.0.2866">
+  <DataCollection StartupDelaySec="1">
+    <DeviceSet Name="" Description="Tools expected from Brainlab: 0: Probe, 1: Reference, 2: Stylus."/>
+  </DataCollection>
+  <CoordinateDefinitions>
+  <Transform From="Ultrasound" To="Image"
+      Matrix="
+        9.5  0.0 0.0 934
+        0.0  0.0 9.5 194
+        0.0 -9.5 0.0   0
+        0    0   0     1"/>
+  <Transform From="PointerTip" To="Pointer"
+      Matrix="
+        1	0	0	0
+        0	1	0	0
+        0	0	1	0
+        0	0	0	1"
+       Error="0.413715" Date="062113_141922"/>
+  </CoordinateDefinitions>
+
+  <VolumeReconstruction
+    OutputSpacing="0.5 0.5 0.5"
+    ClipRectangleOrigin="579 206"
+    ClipRectangleSize="737 641"    
+    FanOrigin="934 -114"
+    FanAngles="-30 30"
+    FanDepth="1000"    
+    Interpolation="LINEAR"
+    Optimization="FULL"
+    Compounding="On"
+    FillHoles="Off"/> 
+</PlusConfiguration>
