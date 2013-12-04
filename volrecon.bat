@@ -1,4 +1,6 @@
-% Set path
+@ECHO OFF
+
+REM Set path
 
 REM set PATH=%PATH%;C:\neurosurgery\dev\PlusExperimental-bin-release\bin\Release\
 

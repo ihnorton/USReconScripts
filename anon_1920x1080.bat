@@ -11,4 +11,4 @@ EditSeqMetaFile.exe ^
     --rect-origin 550 0 ^
     --rect-size 590 60 ^
     --source-seq-file=%1 ^
-    --output-seq-file="%cd%"/%1_anon.mha
+    --output-seq-file="%cd%"/"%~n1"_anon.mha

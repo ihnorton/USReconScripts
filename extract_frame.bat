@@ -14,5 +14,5 @@ EditSeqMetaFile.exe ^
     --operation=TRIM ^
     --first-frame-index=%frame1% ^
     --last-frame-index=%frame2% ^
-    --output-seq-file=C:\temp\us_frame.mha ^
+    --output-seq-file="%cd%"/us_frame_%1.mha ^
     --source-seq-file=%2 
